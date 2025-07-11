@@ -1,0 +1,213 @@
+/* CSS Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif ;
+}
+
+:root {
+  --background-color: rgba(28, 28, 28, 1);
+  --background-button-color: rgba(35, 35, 35, 1);
+  --stroker-color: rgba(60, 60, 60, 1);
+  --symbol-color: rgba(124, 124, 124, 1);
+  --text-color: rgba(255, 255, 255, 1);
+  --alternative-hover: rgba(60, 60, 60, 0.6);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 588px;
+  margin: 60px auto 0;
+  padding: 0 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.box {
+  width: 450px;
+}
+
+.profile img {
+  width: 115px;
+  border-radius: 100%;
+  margin-bottom: 5px;
+}
+
+.title-profile {
+  text-align: center;
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.text-presentation-profile {
+  text-align: center;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.buttons-profile{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.buttons-profile a {
+  width: 450px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: var(--background-button-color);
+  border: 1px solid var(--stroker-color);
+  border-radius: 6px;
+
+  color: var(--text-color);
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+.buttons-profile a:hover {
+  background-color: var(--background-color);
+}
+
+.socials-profile {
+  display: flex;
+  gap: 10px;
+}
+
+.socials-profile a {
+  display: inline-flex;
+  padding: 20px 27.5px;
+
+  
+  background-color: var(--background-button-color);
+  border: 1px solid var(--stroker-color);
+  border-radius: 6px;
+
+  color: var(--symbol-color);
+  font-size: 25px;
+
+  transition: 0.3s ease;
+}
+
+.socials-profile a:hover {
+  background-color: var(--background-color);
+}
+
+.forms-profile {
+  padding: 20px;
+  
+  background-color: var(--background-button-color);
+  border: 1px solid var(--stroker-color);
+  border-radius: 6px;
+}
+
+.forms-profile form {
+  display: flex;
+  gap: 6px;
+}
+
+.forms-profile input {
+  width: 282px;
+  height: 40px;
+  padding: 15px;
+
+  background-color: var(--stroker-color);
+  border: none;
+  border-radius: 6px;
+  color: white;
+}
+
+.forms-profile input:focus{
+  outline: none;
+}
+
+.forms-profile input::placeholder {
+  color: var(--symbol-color);
+}
+
+.forms-profile button {
+  padding: 10px;
+
+  background-color: var(--stroker-color);
+  border: none;
+  border-radius: 6px;
+  
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.forms-profile button:hover {
+  background-color: var(--alternative-hover);
+}
+
+.stack-profile {
+  width: 450px;
+  padding: 15px;
+
+  background-color: var(--background-button-color);
+  border: 1px solid var(--stroker-color);
+  border-radius: 6px;
+}
+
+.stack-profile p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.stack-icons-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 10px;
+}
+
+.stack-icons-profile img {
+  width: 55px;
+}
+
+.footer-profile {
+  display: flex;
+  gap: 12px;
+  
+  color: var(--symbol-color);
+  font-size: 14px;
+
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.footer-profile .symbol-footer-profile {
+  position: relative;
+  top: 1px;
+  font-size: 20px;
+}
+
+.footer-profile p span {
+  color: var(--text-color);
+}
+
